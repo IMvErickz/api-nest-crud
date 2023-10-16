@@ -9,6 +9,7 @@ interface UserProps {
     name: string
     email: string
     password: string
+    avatar_url: string
 }
 
 @Controller()
@@ -31,7 +32,8 @@ export class UserController {
         await this.userRegister.createUser({
             email: userProps.email,
             name: userProps.name,
-            password: userProps.password
+            password: userProps.password,
+            avatar_url: userProps.avatar_url
         })
     }
 
@@ -48,7 +50,8 @@ export class UserController {
             id,
             email: userProps.email,
             name: userProps.name,
-            password: userProps.password
+            password: userProps.password,
+            avatar_url: userProps.avatar_url
         })
     }
 

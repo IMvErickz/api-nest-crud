@@ -17,7 +17,8 @@ export class UserIdService {
             select: {
                 name: true,
                 email: true,
-                password: true
+                password: true,
+                avatar_url: true
             }
         })
     }

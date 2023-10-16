@@ -6,6 +6,7 @@ interface UserProps {
     name: string
     email: string
     password: string
+    avatar_url: string
 }
 
 @Injectable()
@@ -18,6 +19,7 @@ export class RegisterUser {
                 name: userProps.name,
                 email: userProps.email,
                 password: userProps.password,
+                avatar_url: userProps.avatar_url,
                 id: randomUUID()
             }
         })
